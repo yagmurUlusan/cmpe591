@@ -1,5 +1,13 @@
 # CMPE 591 – Homework 1: Training a DNN using PyTorch
 
+## Model Weights
+Due to file size limits, trained model weights are hosted on Google Drive:
+👉 [Download model weights (.pth files)](https://drive.google.com/drive/folders/1BYtEt5Ym_4LSu6G5aEn77iCzlCUYUFL4?usp=sharing)
+
+deliverable1.pth — MLP position predictor
+deliverable2.pth — CNN position predictor
+deliverable3.pth — CNN image predictor
+
 ## Setup
 
 ### Option A – Conda / Mamba (recommended)
