@@ -1,0 +1,16 @@
+name: envforcmpe591
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pip
+  - pip:
+      - torch
+      - torchvision
+      - matplotlib
+      - dm_control==1.0.10
+      - mujoco==2.3.2
+      - pyyaml
+      - git+https://github.com/alper111/mujoco-python-viewer.git

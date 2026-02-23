@@ -1,0 +1,7 @@
+torch
+torchvision
+matplotlib
+numpy
+dm_control==1.0.10
+mujoco==2.3.2
+pyyaml
