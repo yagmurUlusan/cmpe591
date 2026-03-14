@@ -146,7 +146,9 @@ Linear(49160→512) → ReLU → Linear(512→256) → ReLU
 
 High val loss (~1.0) shows that flattening loses spatial structure — the MLP memorises training positions but fails to generalise. This is expected and motivates the CNN approach.
 
-![D1 Loss](d1_loss.png)
+| Run 1 (Instructor) | Run 2 (Ours) |
+|---|---|
+| ![D1 Loss Instructor](d1_loss_instructor.png) | ![D1 Loss](d1_loss.png) |
 
 ### Deliverable 2 — Object Position Prediction (CNN)
 
@@ -165,7 +167,9 @@ Conv(3→32) → Conv(32→64) → Conv(64→128) → Conv(128→256) → Conv(2
 
 **~1100× lower val loss than MLP** (0.00085 vs 0.953). CNN spatial features dramatically outperform flat pixel vectors.
 
-![D2 Loss](d2_loss.png)
+| Run 1 (Instructor) | Run 2 (Ours) |
+|---|---|
+| ![D2 Loss Instructor](d2_loss_instructor.png) | ![D2 Loss](d2_loss.png) |
 
 ### Deliverable 3 — Post-Action Image Reconstruction
 
@@ -181,8 +185,16 @@ Reconstructs the next frame given current image + action, using a UNet encoder-d
 
 Train and val loss track each other closely — no overfitting. Skip connections allow fine spatial details to pass directly to the decoder.
 
-![D3 Loss](d3_loss.png)
+| Run 1 (Instructor) | Run 2 (Ours) |
+|---|---|
+| ![D3 Loss Instructor](d3_loss_instructor.png) | ![D3 Loss](d3_loss.png) |
 
+**Sample Reconstructions (Input | Predicted | Ground Truth):**
+
+**Run 1 — Instructor:**
+![D3 Reconstructions Instructor](d3_reconstructions_instructor.png)
+
+**Run 2 — Ours:**
 ![D3 Reconstructions](d3_reconstructions.png)
 
 ---
